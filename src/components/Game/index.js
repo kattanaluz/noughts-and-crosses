@@ -1,8 +1,9 @@
-import "./Game.css";
+import css from "./Game.css";
 import { useState } from "react";
 import Board from "../Board";
 import Winner from "../Winner";
 import { calculateWinner } from "../../helper";
+import Instructions from "../Instructions";
 
 function Game() {
   const square = [null, null, null, null, null, null, null, null, null];
@@ -33,10 +34,14 @@ function Game() {
   }
 
   return (
-    <div>
-      <Board board={board} onClick={onClick} />
-      <Winner text={winner} />
-    </div>
+    <>
+      <h1>Noughts and Crosses</h1>
+      <div className={css.GameContainer}>
+        <Board board={board} onClick={onClick} />
+        <Winner text={winner} />
+      </div>
+      <Instructions />
+    </>
   );
 }
 

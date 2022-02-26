@@ -1,8 +1,7 @@
-import css from "./winner.module.css";
 function Winner({ text }) {
   return (
     <div>
-      <p>{text}</p>
+      <h2>{text}</h2>
     </div>
   );
 }

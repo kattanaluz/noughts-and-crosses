@@ -1,0 +1,10 @@
+.instructionsButton {
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 550;
+  border: 1px solid rgb(226, 248, 130);
+  border-radius: 5rem;
+  padding: 1rem 0.6rem;
+  margin-top: 1%;
+}
