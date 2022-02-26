@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 132, 255);
+}
+
+.BoardDiv {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 400px;
+  height: 400px;
+}
+
+.Square {
+  width: 100px;
+  height: 100px;
+  border: solid 1px violet;
+  background-color: violet;
+}
